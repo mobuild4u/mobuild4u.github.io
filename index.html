@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Jesus Monroig — React Native</title>
+    <link rel="icon" type="image" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #11151b;
+        color: #e6edf3;
+      }
+      #root {
+        min-height: 100%;
+      }
+      #preboot-loader {
+        position: fixed;
+        inset: 0;
+        z-index: 9998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: #11151b;
+      }
+      #preboot-loader::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        margin-left: 10px;
+        border-radius: 9999px;
+        background: #4ade80;
+        animation: preboot-pulse 1s ease-in-out infinite;
+      }
+      @keyframes preboot-pulse {
+        0%, 100% { opacity: 0.3; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1); }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BXbCPOG3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CYf4TjqM.css">
+  </head>
+  <body>
+    <div id="preboot-loader" aria-hidden="true">loading portfolio</div>
+    <div id="root"></div>
+  </body>
+</html>
